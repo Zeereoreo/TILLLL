@@ -4,6 +4,7 @@ async function getNewsAndWeatherAsync() {
   .then((response) => response.json())
   const promiseTwo = await fetch(weatherURL)
   .then((response) => response.json());
+  // 복습완료
 
   return {news: promiseOne.data, weather : promiseTwo}
 }

@@ -19,6 +19,7 @@ function getNewsAndWeather() {
   })
 
 }
+ // 복습완료d
 
 if (typeof window === 'undefined') {
   module.exports = {

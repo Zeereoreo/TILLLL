@@ -11,7 +11,7 @@ function getNewsAndWeatherAll() {
     .then((json) => {
       return {news: json[0].data, weather : json[1]}
     })
-
+    
     // 1번 -> 1/2번을 둘 다 가지고있어서 [0]을 써야 1번의 값을 쓸 수 있어서..
     // .then(json => {
     //   obj['news'] = json[0]['data'];
@@ -28,6 +28,8 @@ function getNewsAndWeatherAll() {
 //     .then((value) => {
 //       return value.map((el) => JSON.parse(el));
 //     })
+
+// 복습완료
 
 if (typeof window === 'undefined') {
   module.exports = {
